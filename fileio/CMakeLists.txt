@@ -16,8 +16,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 # ============================================
 # 阶段1: 基础文件操作
 # ============================================
-add_executable(my_copy 01_basic/my_copy.cpp)
-add_executable(simple_reader 01_basic/simple_reader.cpp)
+add_executable(file_copy 01_basic/file_copy.cpp)
+add_executable(read_append 01_basic/read_append.cpp)
 
 # ============================================
 # 阶段2: 文件定位与状态
@@ -53,23 +53,6 @@ add_executable(logger_demo
 # ============================================
 
 # 创建输出目录的软链接或确保目录存在
-add_custom_command(TARGET my_copy POST_BUILD
+add_custom_command(TARGET file_copy POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
 )
-
-# 打印构建信息
-message(STATUS "========================================")
-message(STATUS "Linux文件IO学习项目 - 构建完成")
-message(STATUS "输出目录: ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
-message(STATUS "========================================")
-message(STATUS "可用目标:")
-message(STATUS "  make my_copy    - 文件复制")
-message(STATUS "  make simple_reader - 文件读取")
-message(STATUS "  make file_seeker  - 文件定位")
-message(STATUS "  make file_stats   - 文件状态")
-message(STATUS "  make dir_list    - 目录列表")
-message(STATUS "  make dir_walker  - 目录遍历")
-message(STATUS "  make file_lock   - 文件锁")
-message(STATUS "  make memory_map  - 内存映射")
-message(STATUS "  make logger_demo - 日志系统")
-message(STATUS "========================================")
