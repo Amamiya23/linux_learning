@@ -57,7 +57,8 @@ void append_file(const char* file_path, const char* content) {
     if (fd == -1) {
         error_exit("打开文件失败");
     }
-
+    //先添加一个换行
+    write(fd, "\n", 1);
     ssize_t written = write(fd, content, strlen(content));
     if (written == -1) {
         error_exit("写入失败");
@@ -65,9 +66,6 @@ void append_file(const char* file_path, const char* content) {
     else {
         std::cout << "成功追加 " << written << "字节" << std::endl;
     }
-
-    // 自动添加换行符
-    write(fd, "\n", 1);
 
     close(fd);
 }
