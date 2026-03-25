@@ -70,8 +70,6 @@ void append_file(const char* file_path, const char* content) {
     close(fd);
 }
 
-
-
 int main(int argc, char* argv[]) {
     if (argc < 2) {
         std::cout << "用法：" << argv[0] << " <文件名> | " << argv[0] << " <文件名> [追加内容]" << std::endl;
@@ -83,7 +81,6 @@ int main(int argc, char* argv[]) {
         read_file(argv[1]);
     }
     read_file(argv[1]);
-
 
     return EXIT_SUCCESS;
 }

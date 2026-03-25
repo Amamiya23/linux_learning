@@ -1,7 +1,0 @@
-/**
- * 文件复制程序 - 阶段1：基础文件操作
- * 学习目标：掌握 open(), close(), read(), write() 系统调用
- * 
- * 编译: g++ -Wall -Wextra -o file_copy 01_basic/file_copy.cpp
- * 运行: ./file_copy source.txt dest.txt
- */
