@@ -1,2 +1,4 @@
 #编译文件
 fileio/build
+#杂项
+.vscode
