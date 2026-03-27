@@ -1,0 +1,13 @@
+{"timestamp":"2023-01-03T14:00:00","level":"INFO","logger":"AuthService","message":"User authentication started"}
+{"timestamp":"2023-01-03T14:00:01","level":"DEBUG","logger":"AuthService","message":"Validating credentials"}
+{"timestamp":"2023-01-03T14:00:02","level":"INFO","logger":"AuthService","message":"User authenticated successfully"}
+{"timestamp":"2023-01-03T14:05:00","level":"INFO","logger":"API","message":"Received API request: POST /api/users"}
+{"timestamp":"2023-01-03T14:05:01","level":"DEBUG","logger":"API","message":"Validating request payload"}
+{"timestamp":"2023-01-03T14:05:02","level":"INFO","logger":"UserService","message":"Creating new user"}
+{"timestamp":"2023-01-03T14:05:03","level":"DEBUG","logger":"Database","message":"Executing INSERT query"}
+{"timestamp":"2023-01-03T14:05:04","level":"INFO","logger":"UserService","message":"User created successfully"}
+{"timestamp":"2023-01-03T14:10:00","level":"WARN","logger":"Security","message":"Multiple failed login attempts detected"}
+{"timestamp":"2023-01-03T14:15:00","level":"ERROR","logger":"Database","message":"Database connection pool exhausted"}
+{"timestamp":"2023-01-03T14:20:00","level":"INFO","logger":"System","message":"Starting system maintenance"}
+{"timestamp":"2023-01-03T14:25:00","level":"INFO","logger":"Cleanup","message":"Cleaning up old sessions"}
+{"timestamp":"2023-01-03T14:30:00","level":"INFO","logger":"System","message":"System maintenance completed"}

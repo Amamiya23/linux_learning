@@ -1,4 +1,7 @@
 #编译文件
 fileio/build
+
+fileio/log_analyzer/build
+
 #杂项
 .vscode

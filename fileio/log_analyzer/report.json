@@ -1,0 +1,25 @@
+Log Analysis Report
+{
+  "entries": [
+{"timestamp":"2023-01-01 10:00:00","level":"INFO","logger":"MyApp","message":"Application started successfully"}
+{"timestamp":"2023-01-01 10:00:01","level":"DEBUG","logger":"Database","message":"Connecting to database server"}
+{"timestamp":"2023-01-01 10:00:02","level":"INFO","logger":"Database","message":"Connection established"}
+{"timestamp":"2023-01-01 10:00:03","level":"INFO","logger":"WebServer","message":"Starting HTTP server on port 8080"}
+{"timestamp":"2023-01-01 10:00:04","level":"INFO","logger":"WebServer","message":"HTTP server started successfully"}
+{"timestamp":"2023-01-01 10:05:00","level":"INFO","logger":"WebServer","message":"Received GET request from 192.168.1.100"}
+{"timestamp":"2023-01-01 10:05:01","level":"DEBUG","logger":"WebServer","message":"Processing request: GET /index.html"}
+{"timestamp":"2023-01-01 10:05:02","level":"INFO","logger":"WebServer","message":"Request processed successfully"}
+{"timestamp":"2023-01-01 10:10:00","level":"WARN","logger":"Database","message":"Slow query detected: SELECT * FROM users (took 2.5s)"}
+{"timestamp":"2023-01-01 10:15:00","level":"ERROR","logger":"Database","message":"Connection timeout to replica server"}
+{"timestamp":"2023-01-01 10:15:01","level":"WARN","logger":"Database","message":"Switching to primary database"}
+{"timestamp":"2023-01-01 10:20:00","level":"INFO","logger":"MyApp","message":"Scheduled maintenance task started"}
+{"timestamp":"2023-01-01 10:20:05","level":"INFO","logger":"Maintenance","message":"Cleaning up temporary files"}
+{"timestamp":"2023-01-01 10:20:10","level":"INFO","logger":"Maintenance","message":"Removed 150 temporary files"}
+{"timestamp":"2023-01-01 10:25:00","level":"ERROR","logger":"WebServer","message":"Failed to process request: Invalid JSON payload"}
+{"timestamp":"2023-01-01 10:30:00","level":"FATAL","logger":"MyApp","message":"Critical error: Out of memory"}
+{"timestamp":"2023-01-01 10:30:01","level":"INFO","logger":"MyApp","message":"Application shutting down"}
+{"timestamp":"2023-01-01 10:30:02","level":"INFO","logger":"WebServer","message":"HTTP server stopped"}
+{"timestamp":"2023-01-01 10:30:03","level":"INFO","logger":"Database","message":"Database connection closed"}
+{"timestamp":"2023-01-01 10:30:04","level":"INFO","logger":"MyApp","message":"Application stopped"}
+  ]
+}
