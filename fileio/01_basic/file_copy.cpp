@@ -3,8 +3,6 @@
 */
 #include <iostream>
 #include <fcntl.h>      // open()
-#include <iostream>
-#include <fcntl.h>      // open()
 #include <unistd.h>     // read(), write(), close()
 #include <cstring>     // strerror()
 #include <cerrno>      // errno
