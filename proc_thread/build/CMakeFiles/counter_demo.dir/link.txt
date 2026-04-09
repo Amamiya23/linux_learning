@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -g CMakeFiles/counter_demo.dir/05_threads_mutex/counter_demo.cpp.o -o /home/cat/Learning/proc_thread/bin/counter_demo 

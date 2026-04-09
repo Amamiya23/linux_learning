@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -g CMakeFiles/fork_demo.dir/01_process/fork_demo.cpp.o -o /home/cat/Learning/proc_thread/bin/fork_demo 

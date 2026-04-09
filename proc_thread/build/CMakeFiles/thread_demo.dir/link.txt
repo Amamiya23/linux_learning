@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -g CMakeFiles/thread_demo.dir/04_threads/thread_demo.cpp.o -o /home/cat/Learning/proc_thread/bin/thread_demo 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -g CMakeFiles/pipe_demo.dir/03_ipc_pipe/pipe_demo.cpp.o -o /home/cat/Learning/proc_thread/bin/pipe_demo 
