@@ -72,7 +72,7 @@ bool StudentManager::loadFromFile() {
     while ((bytesRead = read(fd, &tempStudent, sizeof(Student))) > 0) {
         // 检查是否读取了完整的记录
         if (bytesRead != sizeof(Student)) {
-            std::cerr << "警告: 读取到不完整的记录" << std::endl;
+            std::cerr << "读取到不完整的记录" << std::endl;
             break;
         }
 
@@ -88,7 +88,7 @@ bool StudentManager::loadFromFile() {
     // 检查读取错误
     if (bytesRead == -1) {
         perror("读取文件失败");
-        close(fd);  // 即使出错也要关闭文件
+        close(fd);  
         return false;
     }
 
@@ -101,11 +101,6 @@ bool StudentManager::loadFromFile() {
 
 /**
  * @brief 保存数据到文件
- *
- * 学习要点：
- * 1. open() 创建新文件：O_CREAT 和 O_TRUNC 标志
- * 2. 文件权限：0644 (用户读写，组和其他用户只读)
- * 3. write() 系统调用写入二进制数据
  *
  * @return 成功返回true，失败返回false
  */
@@ -141,7 +136,7 @@ bool StudentManager::saveToFile() {
         }
     }
 
-    // 使用 close() 系统调用关闭文件描述符
+    //关闭文件描述符
     close(fd);
 
     std::cout << "数据已保存到文件: " << file_path<< std::endl;
@@ -209,7 +204,7 @@ bool StudentManager::deleteStudent(int id) {
     }
 
     if (index == -1) {
-        std::cerr << "错误: 未找到学号为 " << id << " 的学生" << std::endl;
+        std::cerr << "未找到学号为 " << id << " 的学生" << std::endl;
         return false;
     }
 
@@ -238,12 +233,13 @@ Student* StudentManager::findStudent(int id) {
 
 /**
  * @brief 更新学生信息
+ * 更新结构体数组，把结构体数组重新在文件写一遍
  */
 bool StudentManager::updateStudent(int id, const char* name, int age, float score) {
     Student* student = findStudent(id);
 
     if (student == nullptr) {
-        std::cerr << "错误: 未找到学号为 " << id << " 的学生" << std::endl;
+        std::cerr << "未找到学号为 " << id << " 的学生" << std::endl;
         return false;
     }
 
@@ -280,7 +276,7 @@ void StudentManager::listAllStudents() const {
         students[i].display();
     }
 
-    std::cout << "==============================\n" << std::endl;
+    std::cout << "==============================" << std::endl;
 }
 
 /**

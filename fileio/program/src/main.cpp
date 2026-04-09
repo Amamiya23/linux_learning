@@ -7,7 +7,7 @@
 const char* DATA_FILE = "data/students.dat";
 
 void showHelp(const char* programName) {
-    std::cout << "\n========== 学生信息管理系统 ==========\n" << std::endl;
+    std::cout << "\n========== 学生信息管理系统 ==========" << std::endl;
     std::cout << "使用方法:" << std::endl;
     std::cout << "  " << programName << " <命令> [选项]\n" << std::endl;
 
@@ -31,7 +31,7 @@ void showHelp(const char* programName) {
     std::cout << "  " << programName << " update --id 1 --name \"李四\" --age 21" << std::endl;
     std::cout << "  " << programName << " list\n" << std::endl;
 
-    std::cout << "======================================\n" << std::endl;
+    std::cout << "======================================" << std::endl;
 }
 
 
