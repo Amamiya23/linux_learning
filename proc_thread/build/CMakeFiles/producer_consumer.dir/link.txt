@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -g CMakeFiles/producer_consumer.dir/06_threads_condition/producer_consumer.cpp.o -o /home/cat/Learning/proc_thread/bin/producer_consumer 

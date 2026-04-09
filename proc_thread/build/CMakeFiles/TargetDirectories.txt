@@ -1,0 +1,8 @@
+/home/cat/Learning/proc_thread/build/CMakeFiles/fork_demo.dir
+/home/cat/Learning/proc_thread/build/CMakeFiles/wait_demo.dir
+/home/cat/Learning/proc_thread/build/CMakeFiles/pipe_demo.dir
+/home/cat/Learning/proc_thread/build/CMakeFiles/thread_demo.dir
+/home/cat/Learning/proc_thread/build/CMakeFiles/counter_demo.dir
+/home/cat/Learning/proc_thread/build/CMakeFiles/producer_consumer.dir
+/home/cat/Learning/proc_thread/build/CMakeFiles/edit_cache.dir
+/home/cat/Learning/proc_thread/build/CMakeFiles/rebuild_cache.dir

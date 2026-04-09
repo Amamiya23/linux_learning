@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -g CMakeFiles/wait_demo.dir/02_process_wait/wait_demo.cpp.o -o /home/cat/Learning/proc_thread/bin/wait_demo 
